@@ -16,8 +16,6 @@ BuildRequires:	netpbm-devel
 BuildRequires:	urt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 GPLOT is a CGM (Computer Graphics Metafile) processor. CGM files come
