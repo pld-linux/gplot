@@ -2,7 +2,7 @@ Summary:	GPLOT - CGM files processor
 Summary(pl):	GPLOT - narzêdzie do przetwarzania plików CGM
 Name:		gplot
 Version:	4.3b2
-Release:	2
+Release:	3
 Group:		X11/Applications/Graphics
 License:	distributable if unchanged and without charge
 Source0:	ftp://ftp.psc.edu/pub/gplot/%{name}.tar.Z
