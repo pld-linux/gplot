@@ -27,7 +27,7 @@ files, I have not yet had requests for character encoding.
 %description -l pl
 GPLOT jest narzêdziem do przetwarzania plików CGM (Computer Graphics
 Metafile). Pliki CGM wystêpuj± w trzech rodzajach: binarnym
-(najczê¶ciej), czystym tekscie (czytelnym) i znakowym (7 bitów/bajt).
+(najczê¶ciej), czystym tek¶cie (czytelnym) i znakowym (7 bitów/bajt).
 GPLOT interpretuje pliki binarne i czysty tekst.
 
 %prep
