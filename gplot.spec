@@ -6,6 +6,7 @@ Release:	1
 Group:		X11/Applications/Graphics
 Group(de):	X11/Applikationen/Grafik
 Group(pl):	X11/Aplikacje/Grafika
+Group(pt):	X11/Aplicações/Gráficos
 License:	distributable if unchanged and without charge
 Source0:	ftp://ftp.psc.edu/pub/gplot/%{name}.tar.Z
 Patch0:		%{name}-glibc.patch
@@ -23,10 +24,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 GPLOT is a CGM (Computer Graphics Metafile) processor. CGM files come
-in 3 flavours, Binary (dominant form), Clear Text (human readable), and
-Character (more compact than Clear Text, but only 7 bits used per byte)
-encodings. GPLOT will interpret and create Binary and Clear Text files,
-I have not yet had requests for character encoding.
+in 3 flavours, Binary (dominant form), Clear Text (human readable),
+and Character (more compact than Clear Text, but only 7 bits used per
+byte) encodings. GPLOT will interpret and create Binary and Clear Text
+files, I have not yet had requests for character encoding.
 
 %description -l pl
 GPLOT jest narzêdziem do przetwarzania plików CGM (Computer Graphics
