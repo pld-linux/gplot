@@ -1,0 +1,44 @@
+--- gplot-4.3b2/drawcgm/rletocgm/pnmtocgm.c.orig	Thu Nov  5 23:09:49 1992
++++ gplot-4.3b2/drawcgm/rletocgm/pnmtocgm.c	Sat Oct 13 18:53:07 2001
+@@ -30,20 +30,11 @@
+ /* Rather than include a great list of files, define the format ID's
+  * used by the pbm, pgm, and ppm packages.
+  */
+-#define PBM_FORMAT  'P' * 256 + '1'
+-#define RPBM_FORMAT 'P' * 256 + '4'
+-#define PGM_FORMAT  'P' * 256 + '2'
+-#define RPGM_FORMAT 'P' * 256 + '5'
+-#define PPM_FORMAT  'P' * 256 + '3'
+-#define RPPM_FORMAT 'P' * 256 + '6'
+ 
+ /*  This module recognizes what type of machine it's on by the presence
+ of the symbol VMS, unix, CRAY, or ardent.  The following makes the machine
+ assignment less ambiguous.
+ */
+-#if ( unix && ( !CRAY && !ardent $$ !__hpux ) )
+-#define USE_UNIX
+-#endif
+ 
+ /* Include defs files that allow linkage to Fortran on various systems */
+ #ifdef USE_UNIX
+@@ -447,7 +447,7 @@
+   char usage[]= "[-d] [-v] [-o cgmfilename] [pnmfile] [pnmfile] ...";
+   
+   /* Set the global program flag */
+-  pm_progname= argv[0];
++  pm_arg0toprogname(argv[0]);
+ 
+   /* Parse the argument list */
+   while ( argn < argc && argv[argn][0] == '-' && argv[argn][1] != '\0' )
+--- gplot-4.3b2/drawcgm/rletocgm/rletocgm.c.orig	Thu Nov  5 23:09:41 1992
++++ gplot-4.3b2/drawcgm/rletocgm/rletocgm.c	Sat Oct 13 18:53:14 2001
+@@ -41,9 +41,6 @@
+ of the symbol VMS, unix, CRAY, or ardent.  The following makes the machine
+ assignment less ambiguous.
+ */
+-#if ( unix && ( !CRAY && !ardent && !__hpux ) )
+-#define USE_UNIX
+-#endif
+ 
+ /* Include defs files that allow linkage to Fortran on various systems */
+ #ifdef USE_UNIX

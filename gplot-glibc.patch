@@ -1,0 +1,11 @@
+--- gplot-4.3b2/utils.c.orig	Tue Oct 29 16:48:16 1991
++++ gplot-4.3b2/utils.c	Sat Oct 13 16:41:01 2001
+@@ -302,7 +302,7 @@
+ #define may_override(name) if (opt[(int) name].set) switch (opt[(int) name].tag) {	    \
+ 											    case integer: out_info->name = opt[(int) name].val.i; break;			    \
+ 											    case real: out_info->name = opt[(int) name].val.r; break;			    \
+-											    case lst: case str: strcpy(out_info->name, opt[(int) name].val.str); break;}
++											    case lst: case str: strcpy(*(char**)&(out_info->name), opt[(int) name].val.str); break;}
+ {
+   /* and now overide the device if the command line wants us to */
+   may_override(pxl_in);

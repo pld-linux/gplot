@@ -1,0 +1,27 @@
+--- gplot-4.3b2/Makefile.orig	Tue Oct 27 16:07:42 1992
++++ gplot-4.3b2/Makefile	Fri Oct 26 23:33:33 2001
+@@ -132,7 +132,7 @@
+ 
+ # To build this software on a Cray, delete the entry $(XLIBS) from the
+ # next line.
+-LIBS =	$(XLIBS) $(DLIBS) $(MLIBS) $(SLIBS) $(SVLIBS) $(ILIBS) \
++LIBS =	$(XLIBS) $(DLIBS) $(SLIBS) $(SVLIBS) $(ILIBS) \
+ 	$(MACHINE_LIBS) -lm 
+ 
+ FONTS = hload.o
+@@ -182,13 +182,13 @@
+ gplotaw: gplotaw.o wint.o cgm.o ccgm.o utils.o io.o carray.o \
+ 	hload.o emul.o xl.o $(MACHINE_OBJ)
+ 	cc -o $@ gplotaw.o wint.o cgm.o ccgm.o utils.o io.o carray.o \
+-	hload.o emul.o xl.o $(MACHINE_OBJ) $(LIBS)
++	hload.o emul.o xl.o $(MACHINE_OBJ) $(LIBS) -lXaw
+ 
+ # To use the xws driver for gplotm, include $(XWS_OBJ) instead of xl.o
+ gplotm: gplotm.o wint.o cgm.o utils.o io.o carray.o ccgm.o emul.o \
+ 	hload.o xl.o $(MACHINE_OBJ)
+ 	cc -o $@ gplotm.o wint.o cgm.o utils.o io.o carray.o ccgm.o emul.o \
+-	hload.o xl.o $(MACHINE_OBJ) $(LIBS)
++	hload.o xl.o $(MACHINE_OBJ) $(LIBS) $(MLIBS)
+ 
+ drawcgm: $(DCGM_PATH)drawcgm.a
+ 
