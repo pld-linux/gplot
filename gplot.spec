@@ -6,6 +6,7 @@ Release:	1
 Group:		X11/Applications/Graphics
 License:	distributable if unchanged and without charge
 Source0:	ftp://ftp.psc.edu/pub/gplot/%{name}.tar.Z
+# Source0-md5:	b29be9573996be595eff2d7d1dd71849
 Patch0:		%{name}-glibc.patch
 Patch1:		%{name}-x.patch
 Patch2:		%{name}-rletocgm.patch
