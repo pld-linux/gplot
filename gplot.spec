@@ -4,9 +4,6 @@ Name:		gplot
 Version:	4.3b2
 Release:	1
 Group:		X11/Applications/Graphics
-Group(de):	X11/Applikationen/Grafik
-Group(pl):	X11/Aplikacje/Grafika
-Group(pt):	X11/Aplicações/Gráficos
 License:	distributable if unchanged and without charge
 Source0:	ftp://ftp.psc.edu/pub/gplot/%{name}.tar.Z
 Patch0:		%{name}-glibc.patch
