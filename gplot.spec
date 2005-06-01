@@ -12,6 +12,7 @@ Patch1:		%{name}-x.patch
 Patch2:		%{name}-rletocgm.patch
 Patch3:		%{name}-link.patch
 BuildRequires:	XFree86-devel
+BuildRequires:	gcc-g77
 BuildRequires:	motif-devel
 BuildRequires:	netpbm-devel >= 10.0
 BuildRequires:	urt-devel
