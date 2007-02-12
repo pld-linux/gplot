@@ -1,5 +1,5 @@
 Summary:	GPLOT - CGM files processor
-Summary(pl):	GPLOT - narzêdzie do przetwarzania plików CGM
+Summary(pl.UTF-8):   GPLOT - narzÄ™dzie do przetwarzania plikÃ³w CGM
 Name:		gplot
 Version:	4.3b2
 Release:	3
@@ -25,10 +25,10 @@ and Character (more compact than Clear Text, but only 7 bits used per
 byte) encodings. GPLOT will interpret and create Binary and Clear Text
 files, I have not yet had requests for character encoding.
 
-%description -l pl
-GPLOT jest narzêdziem do przetwarzania plików CGM (Computer Graphics
-Metafile). Pliki CGM wystêpuj± w trzech rodzajach: binarnym
-(najczê¶ciej), czystym tek¶cie (czytelnym) i znakowym (7 bitów/bajt).
+%description -l pl.UTF-8
+GPLOT jest narzÄ™dziem do przetwarzania plikÃ³w CGM (Computer Graphics
+Metafile). Pliki CGM wystÄ™pujÄ… w trzech rodzajach: binarnym
+(najczÄ™Å›ciej), czystym tekÅ›cie (czytelnym) i znakowym (7 bitÃ³w/bajt).
 GPLOT interpretuje pliki binarne i czysty tekst.
 
 %prep
