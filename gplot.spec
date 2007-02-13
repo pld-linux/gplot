@@ -1,5 +1,5 @@
 Summary:	GPLOT - CGM files processor
-Summary(pl.UTF-8):   GPLOT - narzędzie do przetwarzania plików CGM
+Summary(pl.UTF-8):	GPLOT - narzędzie do przetwarzania plików CGM
 Name:		gplot
 Version:	4.3b2
 Release:	3
